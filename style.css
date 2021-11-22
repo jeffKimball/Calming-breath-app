@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+}
+
+.main-bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: -10;
+}
+
+@media screen and (max-width: 1024px) {
+  /* Specific to this particular image */
+  main-bg {
+    left: 50%;
+    margin-left: -512px; /* 50% */
+  }
+}
+
+.card-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 260px;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.6);
+  margin: 30px auto;
+}
+
+.card:first-of-type {
+  border-left: 2px solid rgba(52, 134, 235, 0.6);
+  border-top: 2px solid rgba(52, 134, 235, 0.6);
+}
+
+.card:nth-last-of-type(2) {
+  border-left: 2px solid rgba(52, 235, 98, 0.6);
+  border-top: 2px solid rgba(52, 235, 98, 0.6);
+}
+
+.card:last-of-type {
+  border-left: 2px solid rgba(235, 52, 52, 0.6);
+  border-top: 2px solid rgba(235, 52, 52, 0.6);
+}
+
+.card-content {
+  padding: 20px 30px;
+  color: #fff;
+}
+
+h2 {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 8px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.card-content p {
+  font-size: 18px;
+  font-weight: 400;
+}
