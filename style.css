@@ -49,18 +49,18 @@ body {
 }
 
 .card:first-of-type {
-  border-left: 2px solid rgba(52, 134, 235, 0.3);
-  border-top: 2px solid rgba(52, 134, 235, 0.3);
+  border-left: 2.5px solid rgba(52, 134, 235, 0.3);
+  border-top: 2.5px solid rgba(52, 134, 235, 0.3);
 }
 
 .card:nth-of-type(2) {
-  border-left: 2px solid rgba(52, 235, 98, 0.3);
-  border-top: 2px solid rgba(52, 235, 98, 0.3);
+  border-left: 2.5px solid rgba(52, 235, 98, 0.3);
+  border-top: 2.5px solid rgba(52, 235, 98, 0.3);
 }
 
 .card:last-of-type {
-  border-left: 2px solid rgba(235, 52, 52, 0.3);
-  border-top: 2px solid rgba(235, 52, 52, 0.3);
+  border-left: 2.5px solid rgba(235, 52, 52, 0.3);
+  border-top: 2.5px solid rgba(235, 52, 52, 0.3);
 }
 
 .card-content {
