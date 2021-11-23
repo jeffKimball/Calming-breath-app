@@ -16,6 +16,18 @@ body {
   align-items: center;
   margin: 0;
 }
+.menu {
+  height: 40px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.burger {
+  width: 35px;
+  height: 3px;
+  background-color: rgba(134, 181, 221, 1);
+  margin: 6px;
+}
 
 .container {
   display: flex;
@@ -140,6 +152,13 @@ body {
   text-align: center;
   font-size: 20px;
   cursor: pointer;
+  transition: all 0.2s;
+}
+
+.click-start:hover {
+  width: 215px;
+  height: 215px;
+  transition: all 0.2s;
 }
 
 img {
