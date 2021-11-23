@@ -1,32 +1,15 @@
 const container = document.getElementById('container');
+const clickStart = document.getElementById('click-start');
 const text = document.getElementById('text');
 
 const totalTime = 16000;
 const breatheTime = 4000;
 const holdTime = 4000;
 
-// function countDown(){
-//   text.innerText = 4
-
-//   setTimeout(()=>{
-//     text.innerText = '3';
-
-//     setTimeout(()=>{
-//       text.innerText = '2';      
-
-//       setTimeout(()=>{
-//         text.innerText = '1';
-//       },1000)
-//     },1000)
-//   },1000)
-
-  
-// }
-
-// countDown()
 
 
-breathAnimation();
+
+// breathAnimation();
 
 function breathAnimation() {
   
@@ -47,4 +30,4 @@ function breathAnimation() {
    },4000)   
 }
 
-setInterval(breathAnimation, totalTime);
+// setInterval(breathAnimation, totalTime);
