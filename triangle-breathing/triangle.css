@@ -1,5 +1,6 @@
 body {
-  background-image: url("../images/tree-bg.jpg");
+  background-color: rgba(19, 69, 22, 1);
+  background-image: url("../images/tree-bg-75.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -41,7 +42,7 @@ body {
 
 .circle {
   /* background-color: #011940; */
-  background-color: rgba(50, 92, 35, 0.9);
+  background-color: rgba(50, 92, 35, 0.7);
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -131,11 +132,11 @@ body {
 .click-start {
   width: 210px;
   height: 210px;
-  background: rgb(125, 181, 99);
+  background: rgb(89, 134, 68);
   background: linear-gradient(
     45deg,
-    rgba(125, 181, 99, 1) 0%,
-    rgba(139, 221, 134, 1) 70%,
+    rgba(89, 134, 68, 1) 0%,
+    rgba(131, 212, 126, 1) 70%,
     rgba(234, 255, 235, 1) 100%
   );
   color: aliceblue;

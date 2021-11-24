@@ -1,5 +1,6 @@
 body {
-  background-image: url("../images/mtn-bg.jpg");
+  background-color: rgba(1, 25, 64, 1);
+  background-image: url("../images/mtn-bg-75.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -131,10 +132,10 @@ body {
 .click-start {
   width: 210px;
   height: 210px;
-  background: rgb(38, 104, 161);
+  background: rgb(32, 89, 138);
   background: linear-gradient(
     45deg,
-    rgba(38, 104, 161, 1) 0%,
+    rgba(32, 89, 138, 1) 0%,
     rgba(134, 181, 221, 1) 70%,
     rgba(234, 245, 255, 1) 100%
   );
