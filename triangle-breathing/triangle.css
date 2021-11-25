@@ -17,20 +17,22 @@ body {
   top: 15px;
   left: 15px;
 }
+
 .burger {
+  background-color: rgba(139, 221, 134, 0.9);
   width: 35px;
   height: 3px;
-  background-color: rgba(139, 221, 134, 0.9);
   margin: 6px;
 }
 
+/* div holding the animated circle */
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
   height: 300px;
   width: 300px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
   position: relative;
   transform: scale(1);
 }
@@ -45,10 +47,10 @@ body {
   background-color: rgba(50, 92, 35, 0.7);
   height: 100%;
   width: 100%;
-  border-radius: 50%;
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 50%;
   z-index: -1;
 }
 
@@ -66,29 +68,30 @@ body {
   );
   height: 320px;
   width: 320px;
-  z-index: -2;
-  border-radius: 50%;
   position: absolute;
   top: -10px;
   left: -10px;
+  border-radius: 50%;
+  z-index: -2;
 }
 
 /* the timing hand that rotates around the gradient circle */
 .pointer {
-  opacity: 0.7;
   background: linear-gradient(#92c979, transparent);
-  border-radius: 20% 20% 0 0;
   height: 35px;
   width: 3px;
   display: block;
+  border-radius: 20% 20% 0 0;
+  opacity: 0.7;
 }
 
+/* animation property will be triggered using JS */
 .pointer-container {
+  width: 10px;
+  height: 190px;
   position: absolute;
   top: -40px;
   left: 140px;
-  width: 10px;
-  height: 190px;
   /* animation: rotate 12s linear forwards infinite; */
   transform-origin: bottom center;
 }
@@ -133,8 +136,8 @@ body {
 
 /* these elements disappear on-click */
 .click-start {
-  width: 210px;
-  height: 210px;
+  font-size: 20px;
+  color: aliceblue;
   background: rgb(89, 134, 68);
   background: linear-gradient(
     45deg,
@@ -142,8 +145,8 @@ body {
     rgba(131, 212, 126, 1) 70%,
     rgba(234, 255, 235, 1) 100%
   );
-  font-size: 20px;
-  color: aliceblue;
+  width: 210px;
+  height: 210px;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -179,6 +182,7 @@ h2 {
   cursor: text;
 }
 
+/* mobile responsive version with pointer inside .circle for contrast */
 @media (max-width: 450px) {
   .container {
     height: 230px;
@@ -204,10 +208,9 @@ h2 {
   }
 
   .pointer {
-    height: 10px;
-    border-radius: 50%;
     width: 8px;
     height: 8px;
+    border-radius: 50%;
   }
 
   img {

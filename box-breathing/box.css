@@ -18,20 +18,22 @@ body {
   top: 15px;
   left: 15px;
 }
+
 .burger {
+  background-color: rgba(134, 181, 221, 1);
   width: 35px;
   height: 3px;
-  background-color: rgba(134, 181, 221, 1);
   margin: 6px;
 }
 
+/* div holding the animated circle */
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
   height: 300px;
   width: 300px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
   position: relative;
   transform: scale(1);
 }
@@ -46,10 +48,10 @@ body {
   background-color: rgba(1, 25, 64, 0.8);
   height: 100%;
   width: 100%;
-  border-radius: 50%;
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 50%;
   z-index: -1;
 }
 
@@ -67,29 +69,30 @@ body {
   );
   height: 320px;
   width: 320px;
-  z-index: -2;
-  border-radius: 50%;
   position: absolute;
   top: -10px;
   left: -10px;
+  border-radius: 50%;
+  z-index: -2;
 }
 
 /* the timing hand that rotates around the gradient circle */
 .pointer {
-  opacity: 0.7;
   background: linear-gradient(#65abe6, transparent);
-  border-radius: 20% 20% 0 0;
   height: 35px;
   width: 3px;
   display: block;
+  border-radius: 20% 20% 0 0;
+  opacity: 0.7;
 }
 
+/* animation property will be triggered using JS */
 .pointer-container {
+  height: 190px;
+  width: 10px;
   position: absolute;
   top: -40px;
   left: 140px;
-  width: 10px;
-  height: 190px;
   /* animation: rotate 16s linear forwards infinite; */
   transform-origin: bottom center;
 }
@@ -132,9 +135,10 @@ body {
   }
 }
 
+/* these elements disappear on-click */
 .click-start {
-  width: 210px;
-  height: 210px;
+  color: aliceblue;
+  font-size: 20px;
   background: rgb(32, 89, 138);
   background: linear-gradient(
     45deg,
@@ -142,14 +146,14 @@ body {
     rgba(134, 181, 221, 1) 70%,
     rgba(234, 245, 255, 1) 100%
   );
-  color: aliceblue;
-  font-size: 20px;
+  width: 210px;
+  height: 210px;
   position: absolute;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   border-radius: 50%;
-  display: flex;
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -179,6 +183,7 @@ h2 {
   cursor: text;
 }
 
+/* mobile responsive version with pointer inside .circle for contrast */
 @media (max-width: 450px) {
   .container {
     height: 230px;
@@ -204,10 +209,9 @@ h2 {
   }
 
   .pointer {
-    height: 10px;
-    border-radius: 50%;
     width: 8px;
     height: 8px;
+    border-radius: 50%;
   }
 
   img {

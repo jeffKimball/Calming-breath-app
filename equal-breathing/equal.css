@@ -1,16 +1,17 @@
 body {
+  color: #ffd699;
   background-color: #bf3306;
   background-image: url("../images/sunset.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-  overflow: hidden;
-  color: #ffd699;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
   margin: 0;
 }
+
 .menu {
   height: 40px;
   position: absolute;
@@ -19,28 +20,29 @@ body {
 }
 
 .burger {
+  background-color: rgba(224, 133, 20, 1);
   width: 35px;
   height: 3px;
-  background-color: rgba(224, 133, 20, 1);
   margin: 6px;
 }
 
+/* div holding the animated circle */
 .container {
+  height: 300px;
+  width: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
-  height: 300px;
-  width: 300px;
   position: relative;
   transform: scale(1);
 }
 
 /* text to display during the breathing cycle */
 #text {
+  color: #ffa433;
   font-family: "Merienda", sans-serif;
   font-size: 32px;
-  color: #ffa433;
   opacity: 0.7;
 }
 
@@ -48,10 +50,10 @@ body {
   background-color: rgba(156, 33, 20, 0.6);
   height: 100%;
   width: 100%;
-  border-radius: 50%;
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 50%;
   z-index: -1;
 }
 
@@ -69,29 +71,30 @@ body {
   );
   height: 320px;
   width: 320px;
-  z-index: -2;
-  border-radius: 50%;
   position: absolute;
   top: -10px;
   left: -10px;
+  border-radius: 50%;
+  z-index: -2;
 }
 
 /* the timing hand that rotates around the gradient circle */
 .pointer {
-  opacity: 0.7;
   background: linear-gradient(#ffb74a, transparent);
-  border-radius: 20% 20% 0 0;
   height: 35px;
   width: 3px;
   display: block;
+  border-radius: 20% 20% 0 0;
+  opacity: 0.7;
 }
 
+/* animation property will be triggered using JS */
 .pointer-container {
+  width: 10px;
+  height: 190px;
   position: absolute;
   top: -40px;
   left: 140px;
-  width: 10px;
-  height: 190px;
   /* animation: rotate 8s linear forwards infinite; */
   transform-origin: bottom center;
 }
@@ -136,6 +139,8 @@ body {
 
 /* these elements disappear on-click */
 .click-start {
+  color: aliceblue;
+  font-size: 20px;
   width: 210px;
   height: 210px;
   background: rgb(191, 51, 6);
@@ -145,8 +150,6 @@ body {
     rgba(235, 150, 45, 1) 67%,
     rgba(255, 229, 189, 1) 100%
   );
-  color: aliceblue;
-  font-size: 20px;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -182,6 +185,7 @@ h2 {
   cursor: text;
 }
 
+/* mobile responsive version with pointer inside .circle for contrast */
 @media (max-width: 450px) {
   .container {
     height: 230px;
@@ -207,7 +211,6 @@ h2 {
   }
 
   .pointer {
-    height: 10px;
     border-radius: 50%;
     width: 8px;
     height: 8px;

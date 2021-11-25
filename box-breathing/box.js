@@ -2,13 +2,17 @@ const container = document.getElementById('container');
 const text = document.getElementById('text');
 const pointerContainer = document.querySelector('.pointer-container')
 
+// box-breathing timing 
+const totalTime = 16000;
+const breatheTime = 4000;
+const holdTime = 4000;
+
+// items to remove on click event
 const clickStart = document.getElementById('click-start');
 const titleStart = document.getElementById('title-start')
 const iconStart = document.getElementById('icon-start')
 
-const totalTime = 16000;
-const breatheTime = 4000;
-const holdTime = 4000;
+
 
 clickStart.addEventListener('click', ()=>{
   // remove the elements that make up the "begin" button
