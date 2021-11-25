@@ -1,14 +1,14 @@
 body {
   background-color: rgba(19, 69, 22, 1);
+  color: rgba(245, 252, 242, 0.8);
   background-image: url("../images/tree-bg-75.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-  overflow: hidden;
-  color: rgba(245, 252, 242, 0.8);
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
   margin: 0;
 }
 .menu {
@@ -35,13 +35,13 @@ body {
   transform: scale(1);
 }
 
+/* text to display during the breathing cycle */
 #text {
   font-family: "Merienda", sans-serif;
   font-size: 32px;
 }
 
 .circle {
-  /* background-color: #011940; */
   background-color: rgba(50, 92, 35, 0.7);
   height: 100%;
   width: 100%;
@@ -52,6 +52,7 @@ body {
   z-index: -1;
 }
 
+/* makes up outer border of the .circle element */
 .gradient-circle {
   background: conic-gradient(
     #f6fff2 0%,
@@ -72,6 +73,7 @@ body {
   left: -10px;
 }
 
+/* the timing hand that rotates around the gradient circle */
 .pointer {
   opacity: 0.7;
   background: linear-gradient(#92c979, transparent);
@@ -129,6 +131,7 @@ body {
   }
 }
 
+/* these elements disappear on-click */
 .click-start {
   width: 210px;
   height: 210px;
@@ -139,14 +142,14 @@ body {
     rgba(131, 212, 126, 1) 70%,
     rgba(234, 255, 235, 1) 100%
   );
+  font-size: 20px;
   color: aliceblue;
   position: absolute;
-  border-radius: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-size: 20px;
+  border-radius: 50%;
   cursor: pointer;
   transition: all 0.2s;
 }

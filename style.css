@@ -62,8 +62,6 @@ body {
 .card:last-of-type {
   border-left: 2.5px solid rgba(252, 62, 16, 0.3);
   border-top: 2.5px solid rgba(252, 62, 16, 0.3);
-  /* border-left: 2.5px solid rgba(235, 52, 52, 0.3);
-  border-top: 2.5px solid rgba(235, 52, 52, 0.3); */
 }
 
 .card-content {

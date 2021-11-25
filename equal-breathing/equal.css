@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(19, 69, 22, 1);
+  background-color: #bf3306;
   background-image: url("../images/sunset.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,6 +17,7 @@ body {
   top: 15px;
   left: 15px;
 }
+
 .burger {
   width: 35px;
   height: 3px;
@@ -35,6 +36,7 @@ body {
   transform: scale(1);
 }
 
+/* text to display during the breathing cycle */
 #text {
   font-family: "Merienda", sans-serif;
   font-size: 32px;
@@ -43,8 +45,7 @@ body {
 }
 
 .circle {
-  /* background-color: #011940; */
-  background-color: rgba(156, 33, 20, 0.7);
+  background-color: rgba(156, 33, 20, 0.6);
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -54,6 +55,7 @@ body {
   z-index: -1;
 }
 
+/* makes up outer border of the .circle element */
 .gradient-circle {
   background: conic-gradient(
     #ffb74a 0%,
@@ -74,6 +76,7 @@ body {
   left: -10px;
 }
 
+/* the timing hand that rotates around the gradient circle */
 .pointer {
   opacity: 0.7;
   background: linear-gradient(#ffb74a, transparent);
@@ -131,24 +134,25 @@ body {
   }
 }
 
+/* these elements disappear on-click */
 .click-start {
   width: 210px;
   height: 210px;
   background: rgb(191, 51, 6);
   background: linear-gradient(
     45deg,
-    rgba(200, 106, 69, 1) 0%,
-    rgba(224, 133, 20, 1) 67%,
-    rgba(255, 183, 74, 1) 100%
+    rgba(176, 90, 56, 1) 0%,
+    rgba(235, 150, 45, 1) 67%,
+    rgba(255, 229, 189, 1) 100%
   );
   color: aliceblue;
+  font-size: 20px;
   position: absolute;
-  border-radius: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-size: 20px;
+  border-radius: 50%;
   cursor: pointer;
   transition: all 0.2s;
 }
