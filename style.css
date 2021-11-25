@@ -9,6 +9,12 @@ body {
   background-color: #000;
 }
 
+@media (max-width: 980px) {
+  body {
+    margin-top: 40px;
+  }
+}
+
 .main-bg {
   /* Set rules to fill background */
   min-height: 100%;
@@ -32,6 +38,13 @@ body {
   }
 }
 
+.logo {
+  position: absolute;
+  width: 200px;
+  top: 10px;
+  left: 10px;
+}
+
 .card-container {
   width: 80%;
   margin: auto;
@@ -52,6 +65,19 @@ body {
 .card:first-of-type {
   border-left: 2.5px solid rgba(52, 134, 235, 0.3);
   border-top: 2.5px solid rgba(52, 134, 235, 0.3);
+}
+
+@media (max-width: 600px) {
+  .card:first-of-type {
+    margin-top: 60px;
+  }
+
+  .logo {
+    width: 220px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .card:nth-of-type(2) {
