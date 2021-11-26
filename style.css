@@ -80,19 +80,6 @@ body {
   border-top: 2.5px solid rgba(52, 134, 235, 0.3);
 }
 
-/* center text on small screens */
-@media (max-width: 600px) {
-  .logo {
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .breath {
-    display: none;
-  }
-}
-
 .card:nth-of-type(2) {
   border-left: 2.5px solid rgba(52, 235, 98, 0.3);
   border-top: 2.5px solid rgba(52, 235, 98, 0.3);
