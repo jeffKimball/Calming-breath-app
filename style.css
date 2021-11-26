@@ -52,10 +52,11 @@ body {
 
 .breath {
   position: absolute;
+  height: 25px;
   width: 35px;
-  top: 23px;
-  left: 238px;
-  opacity: 0.9;
+  top: 25px;
+  left: 235px;
+  cursor: text;
 }
 
 .card-container {
